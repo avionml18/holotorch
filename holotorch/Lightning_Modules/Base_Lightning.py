@@ -606,7 +606,7 @@ class Base_Lightning(pl.LightningModule):
         target = ( target / amax ) * max_value # 255 represents the bitlevel
         input  = ( input / amax ) * max_value 
 
-        psnr = kornia.metrics.psnr(input = input, target = target, max_val = max_value)
+        psnr = kornia.metrics.psnr(input, target = target, max_val = max_value)
 
         return psnr
 

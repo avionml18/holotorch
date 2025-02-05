@@ -637,4 +637,6 @@ class Modulator_Container(CGH_Component):
                     tmp_title += str(int(wavelengths.data_tensor.squeeze()[k]/nm)) + "nm"
                 plt.title(tmp_title)
             plt.tight_layout()
+
+        return img1
             
